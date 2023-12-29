@@ -63,8 +63,8 @@ gsap.to(
 
 gsap.fromTo(
   ".header-color",
-  { backgroundColor: "white", opacity: 0 },
-  { backgroundColor: "#1e6f50", opacity: 1, duration: 0.1 },
+  {   opacity: 0 },
+  { opacity: 1, duration: 0.1 },
   ">"
 );
 
