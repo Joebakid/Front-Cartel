@@ -10,7 +10,6 @@
 
 body {
   background-color: #1e6f50;
-  /* height: 6000px; */
 }
 
 .container {
@@ -20,9 +19,9 @@ body {
   overflow-x: hidden;
 }
 
-header {
+/* header {
   height: 100vh;
-}
+} */
 
 /* NAV */
 

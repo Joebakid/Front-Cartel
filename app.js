@@ -30,7 +30,7 @@ gsap.fromTo(
   ">"
 );
 
-gsap.fromTo("svg", { opacity: 0 }, { opacity: 1 }, ">");
+gsap.fromTo(".svg-header", { opacity: 0 }, { opacity: 1 }, ">");
 
 gsap.fromTo(
   ".duck-body",
@@ -160,6 +160,23 @@ gsap.fromTo(
 );
 
 gsap.fromTo(
+  ".mobile",
+  {
+    backgroundColor: "#1e6f50;",
+    opacity: 0,
+    skewY: 1,
+  },
+  {
+    backgroundColor: "#d9bd62",
+    opacity: 1,
+    skewY: 0,
+    ease: "bounce.out",
+    duration: 0.2,
+  },
+  ">"
+);
+
+gsap.fromTo(
   ".hero-text",
   { opacity: 0, color: "gray" },
   {
@@ -174,7 +191,7 @@ gsap.fromTo(
 );
 
 gsap.fromTo(
-  ".btn",
+  ".desktop",
   {
     backgroundColor: "#1e6f50;",
     opacity: 0,
