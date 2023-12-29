@@ -1,5 +1,64 @@
 // PRELOADER
 
+function startLoader() {
+  let counterElement = document.querySelector(".counter");
+  let currentValue = 0;
+
+  function updateCounter() {
+    if (currentValue === 100) {
+      return;
+    }
+
+    currentValue += Math.floor(Math.random() * 10) + 1;
+
+    if (currentValue > 100) {
+      currentValue = 100;
+    }
+
+    counterElement.textContent = currentValue;
+
+    let delay = Math.floor(Math.random() * 200) * 50;
+    setTimeout(updateCounter, delay);
+  }
+  updateCounter();
+}
+
+startLoader();
+
+gsap.to(
+  ".counter",
+  0.25,
+  {
+    delay: 3,
+    opacity: 0,
+    display: "none",
+  },
+  ">"
+);
+
+gsap.to(
+  ".bar",
+  1.5,
+  {
+    delay: 3,
+    height: 0,
+    stagger: {
+      amount: 0.5,
+    },
+    ease: "bounce.out",
+  },
+  ">"
+);
+
+gsap.to(
+  ".overlay",
+  5,
+  {
+    display: "none",
+  },
+  ">"
+);
+
 //  ANIMATING OF HEADER IMG
 
 gsap.fromTo(
