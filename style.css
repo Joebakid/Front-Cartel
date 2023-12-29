@@ -10,7 +10,7 @@
 
 body {
   background-color: #1e6f50;
-  height: 6000px;
+  /* height: 6000px; */
 }
 
 .container {
@@ -48,14 +48,20 @@ ul {
 
 li {
   list-style: none;
-  border: 1px solid #1e6f50;
   transition: all 0.5s ease-in-out;
   padding: 5px;
   cursor: pointer;
 }
 
 li:hover {
-  border: 1px solid #a9e5ce;
+  /* border-bottom: 1px solid white; */
+  transform: scale(1.1);
+}
+
+.link {
+  text-decoration: none;
+  border: 1px solid #1e6f50;
+  overflow: hidden;
 }
 
 /* SECTION--1 */
@@ -64,7 +70,6 @@ li:hover {
   grid-template-columns: 1fr 1fr;
   gap: 100px;
   justify-content: space-between;
-
   padding: 0 100px;
   align-items: center;
 }
@@ -74,9 +79,15 @@ li:hover {
   height: 100vh;
 }
 
+.right {
+  grid-area: 1;
+}
+
 .left {
   display: flex;
+  align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .section--1-title {
@@ -89,13 +100,34 @@ li:hover {
   line-height: 2;
 }
 
+.hero-text {
+}
+
+.btn {
+  color: white;
+
+  display: flex;
+  padding: 10px 20px;
+  margin-top: 30px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
 /* /////////////////////////////////////////////// */
 /* /////////////////////////////////////////////// */
 /* /////////////////////////////////////////////// */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .container {
-    width: 90%;
-    padding: 20px 00;
+    width: 95%;
+    padding: 20px 0;
   }
 
   ul {
@@ -106,8 +138,10 @@ li:hover {
   }
 
   .section--1 {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 0 20px;
+    gap: 40px;
   }
   .section--1-text {
     font-size: 0.8rem;
@@ -118,10 +152,6 @@ li:hover {
     font-size: 1.7rem;
     /* width: 100%; */
   }
-
-  /* .search {
-    display: none;
-  } */
 
   svg {
     width: 100%;

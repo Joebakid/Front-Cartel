@@ -28,8 +28,6 @@ gsap.fromTo(
   ">"
 );
 
-// gsap.set("svg", { transformOrigin: "center" });
-
 gsap.fromTo("svg", { opacity: 0 }, { opacity: 1 }, ">");
 
 gsap.fromTo(
@@ -39,7 +37,7 @@ gsap.fromTo(
     opacity: 1,
 
     stagger: 1,
-    duration: 0.5,
+    duration: 0.2,
     ease: "bounce.out",
   },
   ">"
@@ -51,7 +49,7 @@ gsap.fromTo(
     opacity: 1,
 
     stagger: 1,
-    duration: 0.5,
+    duration: 0.2,
 
     ease: "bounce.out",
   },
@@ -64,7 +62,7 @@ gsap.fromTo(
     opacity: 1,
     y: "00px",
 
-    duration: 0.5,
+    duration: 0.2,
     scale: 1,
     ease: "bounce.out",
   },
@@ -77,7 +75,7 @@ gsap.fromTo(
   {
     opacity: 1,
 
-    duration: 0.5,
+    duration: 0.2,
     scale: 1,
     ease: "bounce.out",
   },
@@ -91,7 +89,7 @@ gsap.fromTo(
     opacity: 1,
     y: "00px",
 
-    duration: 0.5,
+    duration: 0.2,
     scale: 1,
     ease: "bounce.out",
   },
@@ -104,7 +102,7 @@ gsap.fromTo(
   {
     scale: 1,
     stagger: 1,
-    duration: 0.5,
+    duration: 0.2,
     ease: "bounce.out",
   },
   ">"
@@ -116,7 +114,7 @@ gsap.fromTo(
   {
     scale: 1,
     stagger: 1,
-    duration: 0.5,
+    duration: 0.2,
     ease: "bounce.out",
   },
   ">"
@@ -127,7 +125,7 @@ gsap.fromTo(
   { opacity: 0, scale: 0.2 },
   {
     opacity: 1,
-    duration: 0.5,
+    duration: 0.2,
     scale: 1,
     stagger: 1,
     ease: "bounce.out",
@@ -139,7 +137,7 @@ gsap.fromTo(
   { opacity: 0, scale: 0.2 },
   {
     opacity: 1,
-    duration: 0.5,
+    duration: 0.2,
     scale: 1,
     stagger: 1,
     ease: "bounce.out",
@@ -151,7 +149,7 @@ gsap.fromTo(
   { opacity: 0, scale: 0.2 },
   {
     opacity: 1,
-    duration: 0.5,
+    duration: 0.2,
     scale: 1,
     stagger: 1,
     ease: "bounce.out",
@@ -173,25 +171,38 @@ gsap.fromTo(
   ">"
 );
 
+gsap.fromTo(
+  ".btn",
+  { backgroundColor: "#1e6f50;", opacity: 0, skewY: 1 },
+  {
+    backgroundColor: "#d9bd62",
+    opacity: 1,
+    skewY: 0,
+    ease: "bounce.out",
+    duration: 0.2,
+  },
+  ">"
+);
+
 // SHOW WHEN HOVERED
-document
-  .querySelector(".search-content")
-  .addEventListener("mouseenter", function () {
-    document.querySelector(".search").style.visibility = "visible";
-  });
+// document
+//   .querySelector(".search-content")
+//   .addEventListener("mouseenter", function () {
+//     document.querySelector(".search").style.visibility = "visible";
+//   });
 
 // LEAVE WHEN NOT HOVERED
-document
-  .querySelector(".search-content")
-  .addEventListener("mouseleave", function () {
-    document.querySelector(".search").style.visibility = "hidden";
-  });
+// document
+//   .querySelector(".search-content")
+//   .addEventListener("mouseleave", function () {
+//     document.querySelector(".search").style.visibility = "hidden";
+//   });
 
 // SMOOTH SCROLLING
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
-  console.log(e);
+  // console.log(e);
 });
 
 function raf(time) {
