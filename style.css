@@ -19,10 +19,6 @@ body {
   overflow-x: hidden;
 }
 
-/* header {
-  height: 100vh;
-} */
-
 /* NAV */
 
 .nav-container {
@@ -65,7 +61,6 @@ li:hover {
   text-decoration: none;
   border: 1px solid #1e6f50;
   overflow: hidden;
-  font-size: 0.875rem;
 }
 
 /* SECTION--1 */
@@ -145,7 +140,7 @@ li:hover {
   }
 
   li {
-    font-size: 0.875rem;
+    font-size: 0.7rem;
   }
 
   .section--1 {
