@@ -173,7 +173,11 @@ gsap.fromTo(
 
 gsap.fromTo(
   ".btn",
-  { backgroundColor: "#1e6f50;", opacity: 0, skewY: 1 },
+  {
+    backgroundColor: "#1e6f50;",
+    opacity: 0,
+    skewY: 1,
+  },
   {
     backgroundColor: "#d9bd62",
     opacity: 1,
