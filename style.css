@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  height: 100vh;
+}
+
 /* NAV */
 
 .nav-container {
@@ -88,6 +92,7 @@ li:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
+  flex-direction: column;
 }
 
 .section--1-title {
@@ -119,6 +124,11 @@ li:hover {
 
 .btn:hover {
   transform: scale(0.98);
+}
+
+.mobile {
+  /* visibility: hidden; */
+  display: none;
 }
 
 /* /////////////////////////////////////////////// */
@@ -156,5 +166,19 @@ li:hover {
   svg {
     width: 100%;
     height: auto;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  /* BTN */
+  .mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
   }
 }
