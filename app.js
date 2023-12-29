@@ -1,3 +1,5 @@
+// PRELOADER
+
 //  ANIMATING OF HEADER IMG
 
 gsap.fromTo(
